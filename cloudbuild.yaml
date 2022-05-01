@@ -5,7 +5,7 @@ steps:
 - name: "gcr.io/cloud-builders/docker"
   args: ['tag', 'dpage/pgadmin4','gcr.io/chicago-business-intelligence/pgadmin']
 - name: "gcr.io/cloud-builders/docker"
-  args: ['push', 'gcr.io/tidal-skill-348904/pgadmin']
+  args: ['push', 'chicago-business-intelligence/pgadmin']
   
 - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
   entrypoint: gcloud
