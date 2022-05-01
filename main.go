@@ -172,7 +172,7 @@ func GetTaxiTrips(db *sql.DB) {
 	// Get your geocoder.ApiKey from here :
 	// https://developers.google.com/maps/documentation/geocoding/get-api-key?authuser=2
 	// write your own Api-key
-	geocoder.ApiKey = "AIzaSyAOaFoDewsUlPw8PlRiZhPwudSIazRBXWs"
+	geocoder.ApiKey = "add your key here"
 
 	drop_table := `drop table if exists taxi_trips`
 	_, err := db.Exec(drop_table)
@@ -319,7 +319,7 @@ func GetTaxiTrips(db *sql.DB) {
 func GetBuildingPermits(db *sql.DB) {
 	fmt.Println("Collecting Building Permits Data")
 	// write your own Api-key
-	geocoder.ApiKey = "AIzaSyAOaFoDewsUlPw8PlRiZhPwudSIazRBXWs"
+	geocoder.ApiKey = "add your key here"
 	fmt.Println("Starting to create table:building_permit")
 	drop_table := `drop table if exists building_permit`
 	_, err := db.Exec(drop_table)
